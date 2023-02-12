@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tchat</title>
+</head>
+<body>
+  <!-- menu -->
+  <div id="nav">
+    <div>
+      <a href="/"><button>Publication</button></a>
+      <a href="/chat"><button>Tchat</button></a>
+      <a href="/profile"><button>Profil</button></a>
+    </div>
+    
+    <form method="POST" action="/logout">
+      <button type="submit">Déconnexion</button>
+    </form>
+  </div>
+  <!-- fin menu -->
+  
+  <h1>Tchat</h1>
+  <div id="connexion-status"></div>
+
+  <form id="chat-form">
+    <input type="text" id="chat-input">
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <div id="message-list"></div>
+
+
+
+  <script src="clientChat.js"></script>
+</body>
+</html>

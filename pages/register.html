@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enregistrement</title>
+</head>
+<body>
+  <h1>Enregistrer</h1>
+  
+  <form method="POST" action="/register" enctype="application/x-www-form-urlencoded">
+    Email:
+    <input type="email" name="email" placeholder="Votre adresse mail">
+    <br>
+    Nom:
+    <input type="text" name="name" placeholder="Votre nom">
+    <br>
+    <button type="submit">Enregistrer</button>
+  </form>
+
+  <br>
+  Vous avez déjà un compte ? <a href="/login">Se connecter</a>
+
+</body>
+</html>
